@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:splitMotionEvents="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ir.accountbooklet.android.Customs.SelectorImageView
+        android:id="@+id/ivClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close"
+        app:siv_tint_color="@color/colorErr"
+        app:t_selector_color="@color/colorDefaultSelector"
+        app:t_style="oval"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:text="@string/restore_backup"
+        app:tv_face_style="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"/>
+
+    <ir.accountbooklet.android.Customs.RecyclerListView
+        android:id="@+id/recyclerListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="25dp"/>
+
+</RelativeLayout>

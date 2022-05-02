@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="title" type="id"/>
+    <item name="message" type="id"/>
+    <item name="command1" type="id"/>
+    <item name="command2" type="id"/>
+    <item name="command3" type="id"/>
+    <item name="et1" type="id"/>
+    <item name="et2" type="id"/>
+    <item name="checkBox" type="id"/>
+</resources>

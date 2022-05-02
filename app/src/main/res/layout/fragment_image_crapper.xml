@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:splitMotionEvents="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+  <ir.accountbooklet.android.Customs.SelectorImageView
+      android:id="@+id/ivBack"
+      style="@style/ToolbarButton"
+      android:src="@drawable/ic_arrow_back"
+      app:siv_tint_color="#FFFFFFFF"
+      app:t_selector_color="@color/colorWhiteSelector"
+      android:layout_centerVertical="false"
+      android:layout_alignParentRight="true"/>
+
+  <ir.accountbooklet.android.Customs.ImageCropper.CropImageView
+      android:id="@+id/ivCrop"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:cropFixAspectRatio="true"
+      app:cropBorderCornerLength="25dp"
+      app:cropBorderCornerOffset="2dp"
+      app:cropBorderCornerThickness="2dp"
+      app:cropBorderLineThickness="1dp"
+      app:cropBackgroundColor="#90000000"
+      app:cropGuidelines="on"
+      android:layout_marginTop="@dimen/toolbar_height"
+      android:layout_marginBottom="65dp"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      android:layout_alignParentBottom="true">
+
+    <ir.accountbooklet.android.Customs.SelectorImageView
+        android:id="@+id/ivRotateRight"
+        style="@style/ToolbarButton"
+        android:src="@drawable/ic_rotate_right"
+        app:siv_tint_color="#FFFFFFFF"
+        app:t_selector_color="@color/colorWhiteSelector"
+        android:padding="13dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ir.accountbooklet.android.Customs.SelectorImageView
+        android:id="@+id/ivFlipHorizontal"
+        style="@style/ToolbarButton"
+        android:src="@drawable/ic_flip_horizontal"
+        app:siv_tint_color="#FFFFFFFF"
+        app:t_selector_color="@color/colorWhiteSelector"
+        android:padding="13dp"/>
+
+    <ir.accountbooklet.android.Customs.SelectorImageView
+        android:id="@+id/ivFlipVertical"
+        style="@style/ToolbarButton"
+        android:src="@drawable/ic_flip_horizontal"
+        android:rotation="90"
+        app:siv_tint_color="#FFFFFFFF"
+        app:t_selector_color="@color/colorWhiteSelector"
+        android:padding="13dp"/>
+
+    <ir.accountbooklet.android.Customs.SelectorImageView
+        android:id="@+id/ivRest"
+        style="@style/ToolbarButton"
+        android:src="@drawable/ic_refresh"
+        android:rotation="90"
+        app:siv_tint_color="#FFFFFFFF"
+        app:t_selector_color="@color/colorWhiteSelector"
+        android:padding="13dp"/>
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:id="@+id/tvApply"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="10sp"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:text="@string/apply"
+        android:singleLine="true"
+        app:tv_face_style="bold"
+        app:t_background_color="#FFFFFFFF"
+        app:t_selector_color="@color/colorDefaultSelector"
+        app:t_style="rect"
+        app:t_radii="7dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"/>
+
+  </LinearLayout>
+
+</RelativeLayout>

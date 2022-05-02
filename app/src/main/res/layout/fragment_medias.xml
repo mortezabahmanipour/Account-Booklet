@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+  <FrameLayout
+      android:id="@+id/layoutTop"
+      android:layout_width="match_parent"
+      android:layout_height="22dp"
+      android:background="@color/colorWhite"
+      android:layout_above="@+id/recyclerView">
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10.5dp"/>
+
+  </FrameLayout>
+
+  <RelativeLayout
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/toolbar_height"
+      android:splitMotionEvents="false"
+      android:background="@color/colorWhite"
+      android:visibility="invisible"
+      android:alpha="0">
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:minWidth="30dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/colorDefault3"
+        app:t_background_color="#10000000"
+        app:t_stroke_width="0dp"
+        app:t_stroke_color="@color/colorDefault3"
+        app:t_style="rect"
+        app:t_radii="15dp"
+        android:paddingTop="3dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"/>
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:id="@+id/tvFolders"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:maxWidth="120dp"
+        android:textSize="@dimen/toolbar_title"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:drawablePadding="3dp"
+        app:tv_face_style="bold"
+        app:tv_drawable_size="18dp"
+        app:tv_drawable_tint_color="@color/colorBlack"
+        app:t_selector_color="@color/colorDefaultSelector"
+        android:paddingTop="3dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvCount"
+        android:layout_centerVertical="true"/>
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewTitle"
+        android:textColor="@color/colorBlackPrimary"
+        android:layout_toRightOf="@+id/tvFolders"
+        android:layout_marginRight="@dimen/toolbar_height"
+        android:layout_marginLeft="10dp"/>
+
+    <ir.accountbooklet.android.Customs.SelectorImageView
+        android:id="@+id/ivBack"
+        style="@style/ToolbarButton"
+        android:src="@drawable/ic_arrow_back"
+        app:t_selector_color="#10000000"
+        app:siv_alpha="0.5"
+        app:siv_tint_color="@color/colorBlack"
+        android:layout_alignParentRight="true"/>
+
+  </RelativeLayout>
+
+  <ir.accountbooklet.android.Customs.RecyclerListView
+      android:id="@+id/recyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWhite"
+      app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+      app:spanCount="3"
+      android:paddingLeft="1.5dp"
+      android:paddingRight="1.5dp"
+      android:layout_marginTop="0dp"
+      android:layout_marginBottom="0dp"
+      android:layout_below="@+id/toolbar"/>
+
+  <ir.accountbooklet.android.Customs.ShadowView
+      android:id="@+id/shdToolbar"
+      style="@style/TopShadow"
+      android:visibility="invisible"
+      android:alpha="0"
+      android:layout_below="@+id/toolbar"/>
+
+</RelativeLayout>

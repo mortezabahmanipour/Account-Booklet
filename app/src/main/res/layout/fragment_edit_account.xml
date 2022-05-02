@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutBase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+  <ir.accountbooklet.android.Customs.TextView
+      android:id="@+id/tvClearAccount"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/toolbar_height"
+      android:textColor="@color/colorText2"
+      android:textSize="12sp"
+      android:singleLine="true"
+      android:text="@string/clear_account"
+      android:gravity="center_vertical"
+      android:drawableRight="@drawable/ic_check"
+      android:drawablePadding="15dp"
+      app:tv_drawable_size="18dp"
+      app:tv_drawable_tint_color="@color/colorText2"
+      app:tv_face_style="bold"
+      app:t_selector_color="@color/colorDefaultSelector"
+      android:paddingRight="15dp"
+      android:paddingLeft="15dp"/>
+
+  <ir.accountbooklet.android.Customs.TextView
+      android:id="@+id/tvDeleteAccount"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/toolbar_height"
+      android:textColor="@color/colorText2"
+      android:textSize="12sp"
+      android:singleLine="true"
+      android:text="@string/delete_account"
+      android:gravity="center_vertical"
+      android:drawableRight="@drawable/ic_delete"
+      android:drawablePadding="15dp"
+      app:tv_drawable_size="18dp"
+      app:tv_drawable_tint_color="@color/colorText2"
+      app:tv_face_style="bold"
+      app:t_selector_color="@color/colorDefaultSelector"
+      android:paddingRight="15dp"
+      android:paddingLeft="15dp"
+      android:layout_below="@+id/tvClearAccount"/>
+
+  <ir.accountbooklet.android.Customs.TextView
+      android:id="@+id/tvAddAmount"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/toolbar_height"
+      android:textColor="@color/colorText2"
+      android:textSize="12sp"
+      android:singleLine="true"
+      android:text="@string/add_amount"
+      android:gravity="center_vertical"
+      android:drawableRight="@drawable/ic_positive"
+      android:drawablePadding="15dp"
+      app:tv_drawable_size="18dp"
+      app:tv_drawable_tint_color="@color/colorText2"
+      app:tv_face_style="bold"
+      app:t_selector_color="@color/colorDefaultSelector"
+      android:paddingRight="15dp"
+      android:paddingLeft="15dp"
+      android:layout_below="@+id/tvDeleteAccount"/>
+
+  <ir.accountbooklet.android.Customs.TextView
+      android:id="@+id/tvAddCard"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/toolbar_height"
+      android:textColor="@color/colorText2"
+      android:textSize="12sp"
+      android:singleLine="true"
+      android:text="@string/add_card"
+      android:gravity="center_vertical"
+      android:drawableRight="@drawable/ic_positive"
+      android:drawablePadding="15dp"
+      app:tv_drawable_size="18dp"
+      app:tv_drawable_tint_color="@color/colorText2"
+      app:tv_face_style="bold"
+      app:t_selector_color="@color/colorDefaultSelector"
+      android:paddingRight="15dp"
+      android:paddingLeft="15dp"
+      android:layout_below="@+id/tvAddAmount"/>
+
+  <ir.accountbooklet.android.Customs.TextView
+      android:id="@+id/tvEditAccount"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/toolbar_height"
+      android:textColor="@color/colorText2"
+      android:textSize="12sp"
+      android:singleLine="true"
+      android:text="@string/edit_all_information_account"
+      android:gravity="center_vertical"
+      android:drawableRight="@drawable/ic_edit"
+      android:drawablePadding="15dp"
+      app:tv_drawable_size="18dp"
+      app:tv_drawable_tint_color="@color/colorText2"
+      app:tv_face_style="bold"
+      app:t_selector_color="@color/colorDefaultSelector"
+      android:paddingRight="15dp"
+      android:paddingLeft="15dp"
+      android:layout_below="@+id/tvAddCard"/>
+
+</RelativeLayout>

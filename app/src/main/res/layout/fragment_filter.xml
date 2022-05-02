@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutBase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+  <ir.accountbooklet.android.Customs.TextView
+      android:id="@+id/tvClear"
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:gravity="center"
+      android:textSize="12sp"
+      android:textColor="@color/colorText4"
+      android:text="@string/delete_filters"
+      app:t_selector_color="@color/colorDefaultSelector"
+      app:t_style="rect"
+      app:t_radii="15dp"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"/>
+
+  <ir.accountbooklet.android.Customs.SelectorImageView
+      android:id="@+id/ivBack"
+      android:src="@drawable/ic_close"
+      style="@style/ToolbarButton"
+      app:t_selector_color="@color/colorDefaultSelector"
+      android:layout_centerVertical="false"
+      android:layout_alignParentRight="true"/>
+
+  <ir.accountbooklet.android.Customs.TextView
+      android:id="@+id/tvTitle"
+      android:layout_height="@dimen/toolbar_height"
+      style="@style/TextViewTitle"
+      android:textColor="@color/colorText"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="50dp"
+      android:layout_centerVertical="false"/>
+
+  <ir.accountbooklet.android.Customs.EditText
+      android:id="@+id/etSearch"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="12sp"
+      android:textColor="@color/colorText"
+      android:textColorHint="@color/colorText3"
+      android:hint="@string/search"
+      android:singleLine="true"
+      android:paddingLeft="15dp"
+      android:paddingRight="15dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginBottom="20dp"
+      android:layout_below="@+id/ivBack"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#10000000"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_below="@+id/etSearch"/>
+
+  <LinearLayout
+      android:id="@+id/layoutDate"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"
+      android:layout_below="@+id/etSearch">
+
+    <ir.accountbooklet.android.Customs.EditText
+        android:id="@+id/etDateTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText3"
+        android:hint="@string/date_to"
+        android:singleLine="true"
+        android:focusable="false"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="0dp"/>
+
+    <ir.accountbooklet.android.Customs.EditText
+        android:id="@+id/etDateFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText3"
+        android:hint="@string/date_from"
+        android:singleLine="true"
+        android:focusable="false"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"/>
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#10000000"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_below="@+id/layoutDate"/>
+
+  <LinearLayout
+      android:id="@+id/layoutType"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="20dp"
+      android:layout_below="@+id/layoutDate">
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/colorText3"
+        android:singleLine="true"
+        android:text="@string/clearing"/>
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/colorText3"
+        android:singleLine="true"
+        android:text="@string/debtor"/>
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/colorText3"
+        android:singleLine="true"
+        android:text="@string/creditor"/>
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/colorText3"
+        android:singleLine="true"
+        android:text="@string/all"/>
+
+  </LinearLayout>
+
+  <ir.accountbooklet.android.Customs.TextView
+      android:id="@+id/tvApply"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:textSize="12sp"
+      android:textColor="@color/colorWhite"
+      android:gravity="center"
+      android:singleLine="true"
+      android:text="@string/apply"
+      app:tv_face_style="bold"
+      app:t_background_color="@color/colorDefault3"
+      app:t_selector_color="@color/colorWhiteSelector"
+      app:t_style="rect"
+      app:t_radii="7dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginBottom="20dp"
+      android:layout_below="@+id/layoutType"/>
+
+</RelativeLayout>

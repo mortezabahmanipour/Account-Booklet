@@ -1,0 +1,267 @@
+<resources>
+  <declare-styleable name="Theme">
+    <attr name="t_selectable" format="boolean"/>
+    <attr name="t_background_color" format="color"/>
+    <attr name="t_stroke_width" format="dimension"/>
+    <attr name="t_stroke_color" format="color"/>
+    <attr name="t_radii" format="dimension"/>
+    <attr name="t_style">
+      <enum name="none" value="0"/>
+      <enum name="rect" value="1"/>
+      <enum name="oval" value="2"/>
+    </attr>
+    <attr name="t_selector_color" format="color"/>
+    <attr name="t_select_stroke_width" format="dimension"/>
+    <attr name="t_select_stroke_color" format="color"/>
+    <attr name="t_select_radii" format="dimension"/>
+    <attr name="t_select_style">
+      <enum name="none" value="0"/>
+      <enum name="rect" value="1"/>
+      <enum name="oval" value="2"/>
+    </attr>
+    <attr name="t_ripple" format="boolean"/>
+    <attr name="t_disable_shape">
+      <flag name="top" value="0x00000001"/>
+      <flag name="bottom" value="0x00000002"/>
+      <flag name="left" value="0x00000004"/>
+      <flag name="right" value="0x00000008"/>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="CircleImageView">
+    <attr name="civ_border" format="boolean" />
+    <attr name="civ_border_width" format="dimension" />
+    <attr name="civ_border_color" format="color" />
+    <attr name="civ_background_color" format="color" />
+    <attr name="civ_shadow" format="boolean" />
+    <attr name="civ_shadow_color" format="color" />
+    <attr name="civ_shadow_radius" format="float" />
+    <attr name="civ_shadow_gravity">
+      <flag name="center" value="1" />
+      <flag name="top" value="2" />
+      <flag name="bottom" value="3" />
+      <flag name="start" value="4" />
+      <flag name="end" value="5" />
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="SelectorImageView">
+    <attr name="siv_tint_color" format="color"/>
+    <attr name="siv_square" format="boolean"/>
+    <attr name="siv_alpha" format="float"/>
+  </declare-styleable>
+
+  <declare-styleable name="EditText">
+    <attr name="et_text_many" format="boolean" />
+    <attr name="et_background_color" format="color" />
+    <attr name="et_radius" format="dimension" />
+    <attr name="et_stroke_width" format="dimension" />
+    <attr name="et_stroke_select_width" format="dimension" />
+    <attr name="et_stroke_color" format="color" />
+    <attr name="et_stroke_selected_color" format="color" />
+  </declare-styleable>
+
+  <declare-styleable name="TextView">
+    <attr name="tv_moving" format="boolean"/>
+    <attr name="tv_many" format="boolean"/>
+    <attr name="tv_drawable_tint_color" format="color"/>
+    <attr name="tv_drawable_size" format="dimension"/>
+    <attr name="tv_drawable_alpha" format="float"/>
+    <attr name="tv_square" format="boolean"/>
+    <attr name="tv_face_style" format="enum">
+      <enum name="normal" value="0"/>
+      <enum name="bold" value="1"/>
+      <enum name="italic" value="2"/>
+      <enum name="bold_italic" value="3"/>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="ResizeableTextView">
+    <attr name="rtv_close_color" format="color"/>
+    <attr name="rtv_open_color" format="color"/>
+    <attr name="rtv_duration" format="integer"/>
+  </declare-styleable>
+
+  <declare-styleable name="ImageView">
+    <attr name="shiv_border_color" format="color"/>
+    <attr name="shiv_border_width" format="dimension"/>
+    <attr name="shiv_border_alpha" format="float"/>
+    <attr name="shiv_square" format="boolean"/>
+    <attr name="shiv_circle" format="boolean"/>
+    <attr name="shiv_radius" format="dimension"/>
+  </declare-styleable>
+
+  <declare-styleable name="SelectorLayout">
+    <attr name="s_square" format="boolean"/>
+    <attr name="s_foreground" format="boolean"/>
+  </declare-styleable>
+
+  <declare-styleable name="CropImageView">
+    <attr name="cropGuidelines">
+      <enum name="off" value="0"/>
+      <enum name="onTouch" value="1"/>
+      <enum name="on" value="2"/>
+    </attr>
+    <attr name="cropScaleType">
+      <enum name="fitCenter" value="0"/>
+      <enum name="center" value="1"/>
+      <enum name="centerCrop" value="2"/>
+      <enum name="centerInside" value="3"/>
+    </attr>
+    <attr name="cropShape">
+      <enum name="rectangle" value="0"/>
+      <enum name="oval" value="1"/>
+    </attr>
+    <attr name="cropAutoZoomEnabled" format="boolean"/>
+    <attr name="cropMaxZoom" format="integer"/>
+    <attr name="cropMultiTouchEnabled" format="boolean"/>
+    <attr name="cropFixAspectRatio" format="boolean"/>
+    <attr name="cropAspectRatioX" format="integer"/>
+    <attr name="cropAspectRatioY" format="integer"/>
+    <attr name="cropInitialCropWindowPaddingRatio" format="float"/>
+    <attr name="cropBorderLineThickness" format="dimension"/>
+    <attr name="cropBorderLineColor" format="color"/>
+    <attr name="cropBorderCornerThickness" format="dimension"/>
+    <attr name="cropBorderCornerOffset" format="dimension"/>
+    <attr name="cropBorderCornerLength" format="dimension"/>
+    <attr name="cropBorderCornerColor" format="color"/>
+    <attr name="cropGuidelinesThickness" format="dimension"/>
+    <attr name="cropGuidelinesColor" format="color"/>
+    <attr name="cropBackgroundColor" format="color"/>
+    <attr name="cropSnapRadius" format="dimension"/>
+    <attr name="cropTouchRadius" format="dimension"/>
+    <attr name="cropSaveBitmapToInstanceState" format="boolean"/>
+    <attr name="cropShowCropOverlay" format="boolean"/>
+    <attr name="cropShowProgressBar" format="boolean"/>
+    <attr name="cropMinCropWindowWidth" format="dimension"/>
+    <attr name="cropMinCropWindowHeight" format="dimension"/>
+    <attr name="cropMinCropResultWidthPX" format="float"/>
+    <attr name="cropMinCropResultHeightPX" format="float"/>
+    <attr name="cropMaxCropResultWidthPX" format="float"/>
+    <attr name="cropMaxCropResultHeightPX" format="float"/>
+    <attr name="cropFlipHorizontally" format="boolean"/>
+    <attr name="cropFlipVertically" format="boolean"/>
+  </declare-styleable>
+
+  <declare-styleable name="ParallaxScrollView">
+    <attr name="set_parallax" format="boolean" />
+    <attr name="number_child_at_parallax" format="integer"/>
+  </declare-styleable>
+
+  <declare-styleable name="Button">
+    <attr name="backgroundColor" format="color"/>
+    <attr name="shapeSize" format="integer"/>
+  </declare-styleable>
+
+  <declare-styleable name="RatingBar">
+    <attr name="srb_borderColor" format="color" />
+    <attr name="srb_fillColor" format="color" />
+    <attr name="srb_backgroundColor" format="color" />
+    <attr name="srb_starBackgroundColor" format="color" />
+    <attr name="srb_pressedBorderColor" format="color" />
+    <attr name="srb_pressedFillColor" format="color" />
+    <attr name="srb_pressedBackgroundColor" format="color" />
+    <attr name="srb_pressedStarBackgroundColor" format="color" />
+    <attr name="srb_numberOfStars" format="integer" />
+    <attr name="srb_starSize" format="dimension" />
+    <attr name="srb_maxStarSize" format="dimension" />
+    <attr name="srb_starsSeparation" format="dimension" />
+    <attr name="srb_starBorderWidth" format="float" />
+    <attr name="srb_starCornerRadius" format="float" />
+    <attr name="srb_isIndicator" format="boolean" />
+    <attr name="srb_rating" format="float" />
+    <attr name="srb_stepSize" format="float" />
+    <attr name="srb_drawBorderEnabled" format="boolean" />
+    <attr name="srb_gravity" format="enum">
+      <enum name="left" value="0"/>
+      <enum name="right" value="1"/>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="RatingReviews">
+    <attr name="rr_label_text_size" format="dimension"/>
+    <attr name="rr_label_text_color" format="color"/>
+    <attr name="rr_label_width" format="dimension"/>
+    <attr name="rr_background_color" format="color"/>
+    <attr name="rr_height" format="dimension"/>
+    <attr name="rr_radius" format="dimension"/>
+    <attr name="rr_space" format="dimension"/>
+    <attr name="rr_number_reviews" format="integer"/>
+    <attr name="rr_duration" format="integer"/>
+  </declare-styleable>
+
+  <declare-styleable name="WeeklyChart">
+    <attr name="wc_stroke_color" format="color"/>
+    <attr name="wc_day_text_color" format="color"/>
+    <attr name="wc_row_text_color" format="color"/>
+    <attr name="wc_background_day_color" format="color"/>
+    <attr name="wc_stroke_width" format="integer"/>
+    <attr name="wc_day_height" format="dimension"/>
+    <attr name="wc_corner_radii" format="dimension"/>
+    <attr name="wc_row_spase" format="dimension"/>
+    <attr name="wc_day_corner_radii" format="dimension"/>
+    <attr name="wc_row_text_size" format="float"/>
+    <attr name="wc_day_text_size" format="float"/>
+    <attr name="wc_animation" format="boolean"/>
+  </declare-styleable>
+
+  <declare-styleable name="ProgressView">
+    <attr name="pv_text_title_color" format="color"/>
+    <attr name="pv_text_message_color" format="color"/>
+    <attr name="pv_text_btn_color" format="color"/>
+    <attr name="pv_btn_background_color" format="color"/>
+    <attr name="pv_btn_height" format="dimension"/>
+    <attr name="pv_progress_size" format="dimension"/>
+    <attr name="pv_icon_size" format="dimension"/>
+    <attr name="pv_text_title_size" format="float"/>
+    <attr name="pv_text_message_size" format="float"/>
+    <attr name="pv_text_btn_size" format="float"/>
+    <attr name="pv_icon_alpha" format="float"/>
+  </declare-styleable>
+
+  <declare-styleable name="DLStoreRow">
+    <attr name="dl_sv_icon" format="reference"/>
+    <attr name="dl_sv_name" format="string"/>
+  </declare-styleable>
+
+  <declare-styleable name="ShadowView">
+    <attr name="shv_start_color" format="color"/>
+    <attr name="shv_center_color" format="color"/>
+    <attr name="shv_end_color" format="color"/>
+    <attr name="shv_orientation" format="enum">
+      <enum name="top_bottom" value="0"/>
+      <enum name="left_right" value="1"/>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="CircleProgressbar">
+    <attr name="cpb_progress" format="float"/>
+    <attr name="cpb_background_progress_width" format="dimension"/>
+    <attr name="cpb_foreground_progress_width" format="dimension"/>
+    <attr name="cpb_background_progress_color" format="color"/>
+    <attr name="cpb_foreground_progress_color" format="color"/>
+    <attr name="cpb_rounded_corner" format="boolean"/>
+    <attr name="cpb_touch_enabled" format="boolean"/>
+    <attr name="cpb_clockwise" format="boolean"/>
+  </declare-styleable>
+
+  <declare-styleable name="YcCardView">
+    <attr name="ycCardBackgroundColor" format="color"/>
+    <attr name="ycCardCornerRadius" format="dimension"/>
+    <attr name="ycCardElevation" format="dimension"/>
+    <attr name="ycCardMaxElevation" format="dimension"/>
+    <attr name="ycCardUseCompatPadding" format="boolean"/>
+    <attr name="ycCardPreventCornerOverlap" format="boolean"/>
+    <attr name="ycContentPadding" format="dimension"/>
+    <attr name="ycContentPaddingLeft" format="dimension"/>
+    <attr name="ycContentPaddingRight" format="dimension"/>
+    <attr name="ycContentPaddingTop" format="dimension"/>
+    <attr name="ycContentPaddingBottom" format="dimension"/>
+    <attr name="android:minWidth"/>
+    <attr name="android:minHeight"/>
+
+    <attr name="ycStartShadowColor" format="color"/>
+    <attr name="ycEndShadowColor" format="color"/>
+  </declare-styleable>
+
+</resources>

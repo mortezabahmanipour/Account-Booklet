@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:splitMotionEvents="false">
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary"
+        android:text="@string/login_fingerprint"
+        android:gravity="center"
+        style="@style/TextViewTitle"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/numberPasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:splitMotionEvents="false"
+        android:layout_marginTop="@dimen/toolbar_height">
+
+        <ir.accountbooklet.android.Customs.EditText
+            android:id="@+id/etPassword"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:enabled="false"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:inputType="numberPassword"
+            android:maxLength="9"
+            android:digits="0123456789"
+            app:et_stroke_color="@color/colorText3"
+            android:padding="0dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:splitMotionEvents="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:splitMotionEvents="false">
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvNum1"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorText2"
+                    android:textSize="16sp"
+                    android:text="@string/_1"
+                    app:tv_face_style="bold"
+                    app:t_background_color="#08000000"
+                    app:t_selector_color="@color/colorDefaultSelector"
+                    app:t_style="oval"
+                    app:t_stroke_width="0dp"
+                    app:t_stroke_color="#15000000"/>
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvNum2"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorText2"
+                    android:textSize="16sp"
+                    android:text="@string/_2"
+                    app:tv_face_style="bold"
+                    app:t_background_color="#08000000"
+                    app:t_selector_color="@color/colorDefaultSelector"
+                    app:t_style="oval"
+                    app:t_stroke_width="0dp"
+                    app:t_stroke_color="#15000000"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"/>
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvNum3"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorText2"
+                    android:textSize="16sp"
+                    android:text="@string/_3"
+                    app:tv_face_style="bold"
+                    app:t_background_color="#08000000"
+                    app:t_selector_color="@color/colorDefaultSelector"
+                    app:t_style="oval"
+                    app:t_stroke_width="0dp"
+                    app:t_stroke_color="#15000000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:splitMotionEvents="false"
+                android:layout_marginTop="10dp">
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvNum4"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorText2"
+                    android:textSize="16sp"
+                    android:text="@string/_4"
+                    app:tv_face_style="bold"
+                    app:t_background_color="#08000000"
+                    app:t_selector_color="@color/colorDefaultSelector"
+                    app:t_style="oval"
+                    app:t_stroke_width="0dp"
+                    app:t_stroke_color="#15000000"/>
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvNum5"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorText2"
+                    android:textSize="16sp"
+                    android:text="@string/_5"
+                    app:tv_face_style="bold"
+                    app:t_background_color="#08000000"
+                    app:t_selector_color="@color/colorDefaultSelector"
+                    app:t_style="oval"
+                    app:t_stroke_width="0dp"
+                    app:t_stroke_color="#15000000"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"/>
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvNum6"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorText2"
+                    android:textSize="16sp"
+                    android:text="@string/_6"
+                    app:tv_face_style="bold"
+                    app:t_background_color="#08000000"
+                    app:t_selector_color="@color/colorDefaultSelector"
+                    app:t_style="oval"
+                    app:t_stroke_width="0dp"
+                    app:t_stroke_color="#15000000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:splitMotionEvents="false"
+                android:layout_marginTop="10sp">
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvNum7"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorText2"
+                    android:textSize="16sp"
+                    android:text="@string/_7"
+                    app:tv_face_style="bold"
+                    app:t_background_color="#08000000"
+                    app:t_selector_color="@color/colorDefaultSelector"
+                    app:t_style="oval"
+                    app:t_stroke_width="0dp"
+                    app:t_stroke_color="#15000000"/>
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvNum8"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorText2"
+                    android:textSize="16sp"
+                    android:text="@string/_8"
+                    app:tv_face_style="bold"
+                    app:t_background_color="#08000000"
+                    app:t_selector_color="@color/colorDefaultSelector"
+                    app:t_style="oval"
+                    app:t_stroke_width="0dp"
+                    app:t_stroke_color="#15000000"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"/>
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvNum9"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorText2"
+                    android:textSize="16sp"
+                    android:text="@string/_9"
+                    app:tv_face_style="bold"
+                    app:t_background_color="#08000000"
+                    app:t_selector_color="@color/colorDefaultSelector"
+                    app:t_style="oval"
+                    app:t_stroke_width="0dp"
+                    app:t_stroke_color="#15000000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:splitMotionEvents="false"
+                android:layout_marginTop="10sp">
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvClear"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:text="@string/clear"
+                    app:t_background_color="@color/colorDefault2"
+                    app:t_selector_color="@color/colorWhiteSelector"
+                    app:t_style="oval"/>
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvNum0"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorText2"
+                    android:textSize="16sp"
+                    android:text="@string/_0"
+                    app:tv_face_style="bold"
+                    app:t_background_color="#08000000"
+                    app:t_selector_color="@color/colorDefaultSelector"
+                    app:t_style="oval"
+                    app:t_stroke_width="0dp"
+                    app:t_stroke_color="#15000000"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"/>
+
+                <ir.accountbooklet.android.Customs.TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:text="@string/login"
+                    app:t_background_color="@color/colorDefault"
+                    app:t_selector_color="@color/colorWhiteSelector"
+                    app:t_style="oval"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fingerprintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:splitMotionEvents="false"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessLeaf">
+
+        <ir.accountbooklet.android.Customs.ImageView
+            android:id="@+id/ivFingerprint"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="0dp"/>
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:id="@+id/tvFingerprintDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/colorText2"
+            android:text="@string/description_fingerprint"
+            android:layout_gravity="center_horizontal"
+            app:tv_face_style="bold"
+            android:layout_marginTop="105dp"
+            android:layout_marginBottom="0dp"/>
+
+    </FrameLayout>
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:id="@+id/tvChangeLoginType"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/colorText3"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/ic_arrow_right"
+        android:text="@string/login_fingerprint"
+        app:tv_drawable_size="22dp"
+        app:tv_drawable_tint_color="@color/colorText4"
+        app:t_selector_color="@color/colorDefaultSelector"
+        app:t_style="rect"
+        app:t_radii="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ir.accountbooklet.android.Customs.ShadowView
+        style="@style/TopShadow"
+        android:layout_below="@id/tvTitle"/>
+
+</RelativeLayout>

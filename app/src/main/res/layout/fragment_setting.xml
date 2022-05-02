@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+  <RelativeLayout
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/toolbar_height"
+      android:background="@color/colorPrimary"
+      android:splitMotionEvents="false"
+      android:layout_marginLeft="0dp"
+      android:layout_marginRight="0dp"
+      android:layout_marginTop="0dp">
+
+    <ir.accountbooklet.android.Customs.SelectorImageView
+        android:id="@+id/ivBack"
+        style="@style/ToolbarButton"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_alignParentRight="true"/>
+
+    <ir.accountbooklet.android.Customs.TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewTitle"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/toolbar_height"
+        android:layout_marginRight="@dimen/toolbar_height"/>
+
+  </RelativeLayout>
+
+  <androidx.core.widget.NestedScrollView
+      android:id="@+id/scrollView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWhite"
+      android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <ir.accountbooklet.android.Customs.TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorText"
+          android:textSize="12sp"
+          android:singleLine="true"
+          android:text="@string/change_name_family_name"
+          app:tv_face_style="bold"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:orientation="horizontal"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="15dp">
+
+        <ir.accountbooklet.android.Customs.EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText3"
+            android:maxLength="50"
+            android:hint="@string/name"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"/>
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:id="@+id/tvChangeName"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:textSize="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:text="@string/change_name"
+            android:drawableRight="@drawable/ic_person"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center_vertical"
+            style="@style/Button"
+            app:drawableTint="@color/colorWhite"
+            app:tv_drawable_size="16dp"
+            app:tv_face_style="bold"
+            app:t_background_color="@color/colorDefault3"
+            app:t_selector_color="@color/colorWhiteSelector"
+            app:t_style="rect"
+            app:t_radii="7dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"/>
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#10000000"/>
+
+      <ir.accountbooklet.android.Customs.TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorText"
+          android:textSize="12sp"
+          android:singleLine="true"
+          android:text="@string/change_password"
+          app:tv_face_style="bold"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:orientation="horizontal"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="15dp">
+
+        <ir.accountbooklet.android.Customs.EditText
+            android:id="@+id/etNewPassword"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText3"
+            android:inputType="number"
+            android:maxLength="9"
+            android:hint="@string/new_password"
+            android:digits="0123456789"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"/>
+
+        <ir.accountbooklet.android.Customs.EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText3"
+            android:inputType="numberPassword"
+            android:maxLength="9"
+            android:hint="@string/password"
+            android:digits="0123456789"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"/>
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:id="@+id/tvChangePassword"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:textSize="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:text="@string/change_password2"
+            android:drawableRight="@drawable/ic_lock"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center_vertical"
+            style="@style/Button"
+            app:drawableTint="@color/colorWhite"
+            app:tv_drawable_size="16dp"
+            app:tv_face_style="bold"
+            app:t_background_color="@color/colorDefault3"
+            app:t_selector_color="@color/colorWhiteSelector"
+            app:t_style="rect"
+            app:t_radii="7dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"/>
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#10000000"/>
+
+      <ir.accountbooklet.android.Customs.TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorText"
+          android:textSize="12sp"
+          android:singleLine="true"
+          android:text="@string/login_fingerprint"
+          app:tv_face_style="bold"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"/>
+
+      <androidx.appcompat.widget.SwitchCompat
+          android:id="@+id/swFingerprint"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="12sp"
+          android:textColor="@color/colorText3"
+          android:text="@string/message_help_fingerprint"
+          app:switchPadding="15dp"
+          android:paddingLeft="15dp"
+          android:paddingRight="15dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginBottom="15dp"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#10000000"/>
+
+      <ir.accountbooklet.android.Customs.TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorText"
+          android:textSize="12sp"
+          android:singleLine="true"
+          android:text="@string/data_backup"
+          app:tv_face_style="bold"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="0dp">
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorText3"
+            android:text="@string/message_help_backup"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:id="@+id/tvBackup"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:textSize="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:text="@string/backup"
+            android:drawableRight="@drawable/ic_save"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center_vertical"
+            style="@style/Button"
+            app:drawableTint="@color/colorWhite"
+            app:tv_drawable_size="16dp"
+            app:tv_face_style="bold"
+            app:t_background_color="@color/colorDefault3"
+            app:t_selector_color="@color/colorWhiteSelector"
+            app:t_style="rect"
+            app:t_radii="7dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="15dp">
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorText3"
+            android:text="@string/message_help_restore_backup"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:id="@+id/tvRestoreBackup"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:textSize="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:text="@string/restore_backup"
+            android:drawableRight="@drawable/ic_settings_backup_restore"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center_vertical"
+            style="@style/Button"
+            app:drawableTint="@color/colorWhite"
+            app:tv_drawable_size="16dp"
+            app:tv_face_style="bold"
+            app:t_background_color="@color/colorDefault3"
+            app:t_selector_color="@color/colorWhiteSelector"
+            app:t_style="rect"
+            app:t_radii="7dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#10000000"/>
+
+      <ir.accountbooklet.android.Customs.TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorText"
+          android:textSize="12sp"
+          android:singleLine="true"
+          android:text="@string/prevent_uninstall_app"
+          app:tv_face_style="bold"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"/>
+
+      <androidx.appcompat.widget.SwitchCompat
+          android:id="@+id/swPreventUninstallApp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="12sp"
+          android:textColor="@color/colorText3"
+          android:text="@string/message_help_prevent_uninstall_app"
+          app:switchPadding="15dp"
+          android:paddingLeft="15dp"
+          android:paddingRight="15dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+  <ir.accountbooklet.android.Customs.ShadowView
+      style="@style/TopShadow"
+      android:layout_below="@id/toolbar"/>
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:splitMotionEvents="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorDefault3"
+            android:text="@string/app_name"
+            app:tv_face_style="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/colorDefault3"
+            android:text="@string/name"
+            android:visibility="invisible"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ir.accountbooklet.android.Customs.EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:maxLength="50"
+            android:hint="@string/name"
+            android:textColorHint="@color/colorDefault3"
+            app:et_radius="7dp"
+            app:et_stroke_color="#20000000"
+            app:et_stroke_selected_color="@color/colorDefault3"
+            app:et_stroke_width="1dp"
+            app:et_stroke_select_width="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/colorDefault3"
+            android:text="@string/password"
+            android:visibility="invisible"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ir.accountbooklet.android.Customs.EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:inputType="numberPassword"
+            android:maxLength="9"
+            android:hint="@string/password"
+            android:textColorHint="@color/colorDefault3"
+            android:digits="0123456789"
+            app:et_radius="7dp"
+            app:et_stroke_color="#20000000"
+            app:et_stroke_selected_color="@color/colorDefault3"
+            app:et_stroke_width="1dp"
+            app:et_stroke_select_width="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:id="@+id/tvRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/colorDefault3"
+            android:text="@string/re_password"
+            android:visibility="invisible"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ir.accountbooklet.android.Customs.EditText
+            android:id="@+id/etRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:inputType="numberPassword"
+            android:maxLength="9"
+            android:hint="@string/re_password"
+            android:textColorHint="@color/colorDefault3"
+            android:digits="0123456789"
+            app:et_radius="7dp"
+            app:et_stroke_color="#20000000"
+            app:et_stroke_selected_color="@color/colorDefault3"
+            app:et_stroke_width="1dp"
+            app:et_stroke_select_width="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ir.accountbooklet.android.Customs.TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/submit"
+            android:layout_gravity="center_horizontal"
+            app:t_background_color="@color/colorDefault3"
+            app:t_selector_color="@color/colorWhiteSelector"
+            app:t_style="rect"
+            app:t_radii="20dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
