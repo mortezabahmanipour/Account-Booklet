@@ -14,11 +14,12 @@ import ir.accountbooklet.android.ApplicationLoader;
 import ir.accountbooklet.android.BuildConfig;
 import ir.accountbooklet.android.Constants;
 import ir.accountbooklet.android.R;
+import ir.accountbooklet.android.Session.Session;
 
 public class MarketUtils {
 
   public static boolean isPublic() {
-    return false;
+    return Session.getInstance().isBoolean("is_public", false);
   }
 
   public static String getMarketLinkShare(boolean haveMarket) {
