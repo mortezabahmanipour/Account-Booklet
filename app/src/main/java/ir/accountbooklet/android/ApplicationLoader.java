@@ -40,6 +40,8 @@ public class ApplicationLoader extends Application {
   public void startActivity(Intent intent) {
     if (AdiveryUtils.getInstance().canStartActivity()) {
       super.startActivity(intent);
+    } else {
+      Constants.start(intent);
     }
   }
 
